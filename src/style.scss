@@ -1,0 +1,48 @@
+body {
+    background: #000 url("./img/crxbg.jpg") no-repeat fixed 0 0 ;
+    background-size: 100%
+}
+
+
+h1, h2{margin: 0; color: #222}
+h1 {font-size: 1.2em}
+h2 {font-size: .8em; padding: 2px; font-weight: normal; background-color: rgba(0, 0, 0, .14); width: 48%}
+h3 {font-size: .6em; padding: 2px; font-weight: normal; margin: 0; color: #eee; background-color: rgba(0, 0, 0, .5); width: 48%}
+
+header {
+    padding: 8px;
+}
+
+.content {
+    padding: 4px;
+    background-color: rgba(0, 0, 0, .5)
+}
+
+.thumbs {
+    height: 120px; overflow: auto; margin-bottom: 8px;
+    border: solid 1px green;
+    display: flex; flex-wrap: wrap;
+    img {width: 60px; margin: 0px}
+}
+
+.slideshow {
+    width: 80%; margin: auto; text-align: center;
+    img {margin: auto; width: 100%}
+    .desc {padding: 4px; font-size: .8em}
+}
+
+@media only screen and (min-width: 640px){
+    h1 {font-size: 1.8em}
+    h2 {font-size: .9em}
+    h3 {font-size: .8em}
+
+   .thumbs {
+        height: 120px; overflow: auto ; margin-bottom: 8px;
+        img {width: 130px; margin: 0px}
+    }
+
+    .slideshow {
+        width: 50%;
+        max-width: 600px
+    } 
+}
